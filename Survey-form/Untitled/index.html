@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Blue Apron's Experience Survey</h1>
+          <p id="description" class="description text-center">Thank you for helping us improve our meal delivery service. We look forward to your insight on our chef inspired boxes and appreciate your support in our dreams.</p>
+        </header>
+
+        <form id="survey-form">
+          <div id="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div id="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="16"
+              max="99"
+              class="form-control"
+              placeholder="Enter your age"
+            />
+          </div>
+
+          <div class="form-group">
+            <p>How did you discover Blue Apron?</p>
+            <select id="dropdown" name="discovery" class="form-control" required>
+              <option disabled selected value>Please select one.</option>
+              <option value="youtube">YouTube</option>
+              <option value="facebook">Facebook Ad</option>
+              <option value="commercial">Commercials</option>
+              <option value="newspaper">Newspaper Advertisement</option>
+              <option value="app">Andriod/iPhone App store</option>
+              <option value="friend">Refer-a-Friend Promotion</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>How confident do you feel cooking in a kitchen?</p>
+
+            <label>
+              <input
+                name="user-recommend"
+                value="Extremely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Extremely Confident
+            </label>
+
+            <label>
+              <input
+                name="user-recommend"
+                value="confident"
+                type="radio"
+                class="input-radio"
+              />Confident
+            </label>
+
+            <label>
+              <input
+                name="user-recommend"
+                value="somewhat"
+                type="radio"
+                class="input-radio"
+              />Somewhat Confident
+            </label>
+
+            <label>
+              <input
+                name="user-recommend"
+                value="mild"
+                type="radio"
+                class="input-radio"
+              />Mildly Confident
+            </label>
+
+            <label>
+              <input
+                name="user-recommend"
+                value="scared"
+                type="radio"
+                class="input-radio"
+              />Not Confident
+            </label>
+          </div>
+
+          <div>
+            <p>
+            Which items on our menu have you tried?
+            <span class="clue">(Check all that apply)</span>
+            </p>
+
+            <label>
+              <input
+                name="prefer"
+                value="signature-dishes"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Signature Dishes Menu
+            </label>
+
+            <label>
+              <input
+                name="prefer"
+                value="vegetarian-dishes"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Vegetarian Menu
+            </label>
+
+            <label>
+              <input
+                name="prefer"
+                value="wellness-option"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Wellness Inspired Menu
+            </label>
+
+            <label>
+              <input
+                name="prefer"
+                value="appetizers"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Appetizer Add-on Menu
+            </label>
+
+            <label>
+              <input
+                name="prefer"
+                value="sides"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Locally Sourced Sides Menu
+            </label>
+
+            <label>
+              <input
+                name="prefer"
+                value="breakfast"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Scrumptious Breakfast Menu
+            </label>
+
+            <label>
+              <input
+                name="prefer"
+                value="dessert"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Delicious Desserts
+            </label>
+
+            <label>
+              <input
+                name="prefer"
+                value="heat-eat"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Delectable Heat & Eat Meals
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p>What has been your best and worst experience with our boxes?</p>
+            <textarea
+              id="experience"
+              class="input-textarea"
+              name="experience"
+              placeholder="Please tell us about your experiences here..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <p>Would you order another box?</p>
+            <label>
+              <input
+                name="user-recommend-2"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely
+            </label>
+
+            <label>
+              <input
+                name="user-recommend-2"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe
+            </label>
+
+            <label>
+              <input
+                name="user-recommend-2"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />Not Likely
+            </label>
+          </div>
+
+          <div>
+            <p>Any comments or suggestions on ways for us to improve would be greatly appreciated!</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Please enter any additional comments here..."
+              ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" id="submit" class="submit-button">
+            <span class="text">
+              Submit</span>
+            <i class="ri-check-line icon"></i>
+            </button>
+          </div>
+          
+        </form>
+      </div>
+    </body>
+  </html>
